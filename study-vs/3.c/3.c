@@ -4,7 +4,7 @@
 void main()
 {
 	int N, *a , sum = 0 ;
-	scanf("%d", &N);
+	scanf("%d", &N  );
 
 	a = (int*)malloc(N * sizeof(int));
 
@@ -17,8 +17,9 @@ void main()
 		if (a[i] > 0)
 			sum = sum + 1;
 
-		printf("%d ", &a[i]);
 	}
+	printf("%d", sum );
+	
 	free(a);
 	printf("\n");
 	system("pause");
